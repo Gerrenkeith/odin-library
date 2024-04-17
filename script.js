@@ -49,6 +49,15 @@ function deleteBook(itemId){
      console.log(myLibrary)
 }
 
+function readBook(book){
+    if(myLibrary[book].read){
+        myLibrary[book].read = false
+    } else {
+        myLibrary[book].read = true
+    }
+
+    console.log(myLibrary)
+}
 
 const container = document.getElementById("container");
 
